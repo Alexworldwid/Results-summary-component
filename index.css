@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Light-red-background: hsla(0, 100%, 67%, 0.1);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Orangey-yellow-background: hsla(39, 100%, 56%, 0.1);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Green-teal-background: hsla(166, 100%, 37%, 0.1);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Cobalt-blue-background: hsla(234, 85%, 45%, 0.1);
+  --Light-black: hsla(180, 8%, 3%, 0.4);
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --White-with-opacity: hsla(0, 0%, 100%, 0.5);
+  --White-with-medium-opacity: hsla(0, 0%, 100%, 0.8);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto
+}
+.left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    height: 330px;
+    border-radius: 0 0 28px 28px ;
+}
+.result {
+    color: var(--White-with-opacity);
+    font-size: 1rem;
+    margin: 1.3em 0;
+}
+.total-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.mark {
+    color: var(--White);
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+.mark-p {
+    color: var(--White-with-opacity);
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+h1 {
+    color: var(--White-with-medium-opacity);
+    font-size: 1.3rem;
+}
+.review-p {
+    color: var(--White-with-medium-opacity);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 15px;
+}
+.right-col {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 26rem;
+    padding: 25px 29px;
+}
+.summary {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+p img {
+    vertical-align: middle;
+    width: 1rem;
+    margin-right: 5px;
+}
+.score {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.overall {
+    color: var(--Light-black);
+}
+.reaction {
+    background-color: var(--Light-red-background);
+}
+.reaction-p {
+    color: var(--Light-red);
+    font-size: 0.8rem;
+}
+.memory {
+    background-color: var(--Orangey-yellow-background);
+}
+.memory {
+    color: var(--Orangey-yellow);
+    font-size: 0.8rem;
+}
+.verbal {
+    background-color: var(--Green-teal-background);
+}
+.verbal-p {
+    color: var(--Green-teal);
+    font-size: 0.8rem;
+}
+.visual {
+    background-color: var(--Cobalt-blue-background);
+}
+.visual-p {
+    color: var(--Cobalt-blue);
+    font-size: 0.8rem;
+}
+button {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(42, 57, 66);
+    color: var(--White);
+    font-size: 0.9rem;
+}
+button:hover {
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 5px;
+    }   
+    .left-col {
+        border-radius: 28px;
+    }
+    .right-col {
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.1);
+    }
+}
